@@ -1260,4 +1260,11 @@ extern "C" {
     pub fn FT_Face_GetVariantSelectors(face: FT_Face) -> *mut FT_UInt;
     pub fn FT_Face_GetVariantsOfChar(face: FT_Face, charcode: FT_ULong) -> *mut FT_UInt32;
     pub fn FT_Face_GetCharsOfVariant(face: FT_Face, variant_selector: FT_ULong) -> *mut FT_UInt32;
+
+    // Added psmodule methods
+    pub fn ft_unicode_from_adobe_name(
+        glyph_name: FT_Pointer, /*  *const const char*  glyph_name  */
+    ) -> FT_UInt32;
+
+    pub fn ft_adobe_name_from_unicode(glyph_name: FT_Pointer, unicode: FT_UInt32);
 }

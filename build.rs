@@ -56,6 +56,7 @@ fn main() {
             "psaux/psaux",
             "pshinter/pshinter",
             "psnames/psnames",
+            "psnames/psmodule_ext",
             "raster/raster",
             "sdf/sdf",
             "svg/svg",
