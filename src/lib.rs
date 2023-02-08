@@ -1263,8 +1263,8 @@ extern "C" {
 
     // Added psmodule methods
     pub fn ft_unicode_from_adobe_name(
-        glyph_name: FT_Pointer, /*  *const const char*  glyph_name  */
+        glyph_name: *const FT_Char, /*  *const const char*  glyph_name  */
     ) -> FT_UInt32;
 
-    pub fn ft_adobe_name_from_unicode(glyph_name: FT_Pointer, unicode: FT_UInt32);
+    pub fn ft_adobe_name_from_unicode(glyph_name: *mut FT_Char, unicode: FT_UInt32);
 }
